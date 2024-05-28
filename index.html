@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sujan Poudel</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4d208daccb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="file.png" class="logo" alt="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+
+      </nav>
+      <div class="header-text">
+        <p>Electrical and Electronics Engineer</p>
+        <h1><span class="auto-type"></span><br> I'm <span>Sujan</span><br>From Nepal</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section below -->
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img style="opacity: 0.7;" src="theImage.png" alt="Image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am an engineer and programmer who loves signal processing, satellite technology, networking,
+            telecommunication, AR/VR, and web development. I have skills and experience in using various software and
+            hardware tools for creating applications and solutions</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('volunteering')">Volunteering</p>
+            <p class="tab-links" onclick="opentab('awards')">Awards</p>
+
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Unity</span><br>Creating 2D & 3D Games</li>
+              <li><span>HTML/CSS/Js</span><br>Creating Responsive Websites</li>
+              <li><span>Reality Scan</span><br>Creating 3D Models</li>
+              <li><span>C/ C++/ Python/ Java</span><br>Creating Console and Desktop Applications</li>
+              <li><span>Arduino/ Node MCU/ Raspberry-Pi/ Different Sensors</span><br>Implementing Local/ Cloud Based
+                Automation System</li>
+              <li><span>Proteus/ Multi-sim/ Matlab/ Cisco Packet Tracer/ NS2/ GNS3/ L-Spice</span><br>Circuit and
+                Network Simulating/ Designing</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Department of Electrical and Electronics Engineering, Kathmandu University</span><br>Electrical
+                and Electronics (Communication) Engineer<br>August 2023 - Present</li>
+              <li><span>Technical Operation Center, Dish Media Pvt. Ltd., Nepal</span><br>Broadcast Intern (Academic
+                Internship) <br>Jan 2023 - Feb 2023/li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Kathmandu University, Dhulikhel, Nepal</span><br>Bachelor of Electrical and Electronics
+                Engineering <br>Aug. 10 2018 - Jun. 5 2023</li>
+              <li><span>Oxford Secondary School, Nawalpur, Nepal</span><br>National Education Board - General Science
+                <br>Apr. 2021 - Nov. 2022</li>
+              <li><span>Viddhya Jyoti English Boarding School, Madi, Nepal</span><br>School Leaving Certificate<br>Apr.
+                2006 - Apr. 2016</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="volunteering">
+            <ul>
+              <li><span>Society Of Electrical and Electronics Engineers, Kathmandu University</span><br>Event Head
+                <br>Event Head of all technology-related events like Hackathon, Online Circuit Competition, and
+                Electronic Traning Workshops.<br>Sept. 2022 - Sept. 2022</li>
+              <li><span>Society Of Electrical and Electronics Engineers , Kathmandu
+                  University</span><br>Instructor<br>Instructor of two-day Raspberry-Pi training to the Undergraduate
+                students of Electrical and Electronics Engineering at Kathmandu University, DoEEE<br>Jul 2022 - Jul 2022
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="awards">
+            <ul>
+              <li> <span>Direct Enrollment from KU Employment Promotion Program for a year</span><br> Securing highest grade in the batch of 2018 at the Department of Electrical and Electronics Engineering, Kathmandu University</li>
+              <li> <span>Academic Scholarship for semester I, II and IV at Kathmandu University, Nepal</span><br> </li>
+              <li> <span>Scholarship for Intermediate Science at Oxford Secondary School, Nawalpur, Nepal </span><br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- licert-->
+
+        <!-- Image Overlay Element -->
+        <div id="image-overlay" class="image-overlay" onclick="closeOverlay()">
+          <div class="image-overlay-content">
+            <img id="expanded-img" src="" alt="Expanded image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- projects Section -->
+  <div id="projects" class="hide">
+    <div class="container">
+      <div class="sub-title" style="font-weight: bold;">Projects</div>
+      <div class="project-list">
+        <div class="project">
+          <img src="theGalaxyShooter.png" alt="The Galaxy Shooter">
+          <div class="layer">
+            <h3>The Galaxy Shooter</h3>
+            <p>Play to destroy the enemy ships in the deep, dark, and cold space.,<br><br>
+            <p style="color: red; font-weight: bold;">!!If server is not active, contact host!!</p>
+            </p>
+            <a target="_blank" href="https://rohittbhusal.centralindia.cloudapp.azure.com/TSW/"><i
+                class="fa fa-external-link" aria-hidden="true"></i></a>
+            <p>2D Game</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="theEscape.png" alt="The Dungeon Escape">
+          <div class="layer">
+            <h3>The Dungeon Escape</h3>
+            <p>Play to Escape the Dungeon by killing Monsters, Spiders, and Zombies<br><br>
+            <p style="color: red; font-weight: bold;">!!If server is not active, contact host!!</p>
+            </p>
+            <a target="_blank" href="https://rohittbhusal.centralindia.cloudapp.azure.com/TDE/"><i
+                class="fa fa-external-link" aria-hidden="true"></i></a>
+            <p>2D Game</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="theGreatFleece.png" alt="The Great Fleece">
+          <div class="layer">
+            <h3>The Great Fleece</h3>
+            <p>Play to go around the guards and loot the diamond necklace.<br><br>
+            <p style="color: red; font-weight: bold;">!!If server is not active, contact host!!</p>
+            </p>
+            <a target="_blank" href="https://rohittbhusal.centralindia.cloudapp.azure.com/TGF/"><i
+                class="fa fa-external-link" aria-hidden="true"></i></a>
+            <p>3D Game</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="theGreatHouse.png" alt="The Great House">
+          <div class="layer">
+            <h3>The Great House Tour</h3>
+            <p>Enter to Tour My Friend's House in 3D.<br><br>
+            <p style="color: red; font-weight: bold;">!!If server is not active, contact host!!</p>
+            </p>
+            <a target="_blank" href="https://rohittbhusal.centralindia.cloudapp.azure.com/TGH/"><i
+                class="fa fa-external-link" aria-hidden="true"></i></a>
+            <p>3D House Tour</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Academic Project-->
+  <div id="aproject">
+    <div class="container">
+        <h1>Lists of the Academic Projects</h1>
+        <div class="aproject-list project1">
+            <p><span>GFSK modulation and demodulation of Sanosat-1</span><br>This system involves the study of modulation and demodulation scheme used by Sanosat-1, a CubeSat launched by Orion Space. It involves why GFSK scheme is better choice over other scheme. And there is replication of the scheme in GNU Radio to study different digital communication parameters.</p>
+        </div>
+        <div class="aproject-list project2">
+            <p><span>Solid waste monitoring system</span><br>The system monitors trash levels with ultrasonic sensors and sends data wirelessly to a central server. Waste authorities can access the information via a web interface to improve garbage collection efficiency.</p>
+        </div>
+        <div class="aproject-list project3">
+            <p><span>Smart dustbin for physically disabled people</span><br>The design is for a smart waste container that uses a servo motor and IR sensor to detect users and open the lid, with the aim of assisting physically disabled users. The dustbin can be remote operated for waste disposal by RF transmitter and receiver with encoder and decoder.</p>
+        </div>
+        <div class="aproject-list project3">
+            <p><span>Automated Multilevel Room Temperature Control System</span><br>Design a circuit to control fan state and speed based on room temperature using LM35 (temperature sensor) a comparator circuit and a motor driver, with a customized reference level.</p>
+        </div>
+
+    </div>
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left-col">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> isujanpoudel@gmail.com</p>
+          <p><i class="fas fa-phone"></i> (+977) 9809288922</p>
+          <div class="social-icons">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100006112399150"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://github.com/sujanpogithub"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sujannpoudel/"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="Sujan_Poudel_CV.pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="contact-right-col">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; Sujan</p>
+    </div>
+  </div>
+
+  <a class="to-top" href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    const opentab = (tabname) => {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link")
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+      document.querySelector("html").style.overflowY = "hidden";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+      document.querySelector("html").style.overflowY = "visible";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8CHMHIDD8KEMVAkU7YrC4VS87g7sDEOCIrHLSZ-O0sfdAR6S3IuCsxDgVQF64pUUo/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Successful";
+          setTimeout(() => {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    const typed = new Typed(".auto-type", {
+      strings: ["Hi", "नमस्ते"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const scrollContainer = document.querySelector('.certs-list');
+
+      scrollContainer.addEventListener('wheel', (evt) => {
+
+        evt.preventDefault();
+
+
+        const deltaX = evt.deltaY || evt.detail || evt.wheelDelta;
+        scrollContainer.scrollLeft += deltaX * 1;
+      }, { passive: false });
+    });
+  </script>
+  <script>
+    function openOverlay(src) {
+
+      const overlay = document.getElementById('image-overlay');
+      const expandedImg = document.getElementById('expanded-img');
+
+
+      expandedImg.src = src;
+      overlay.classList.add('show');
+    }
+
+    function closeOverlay() {
+
+      const overlay = document.getElementById('image-overlay');
+      overlay.classList.remove('show');
+    }
+
+
+    document.querySelectorAll('.certs-list img').forEach(img => {
+      img.addEventListener('click', () => openOverlay(img.src));
+    });
+
+
+    document.getElementById('image-overlay').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeOverlay();
+    });
+  </script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const projectList = document.querySelector('.project-list');
+
+
+      projectList.addEventListener('wheel', (e) => {
+
+        e.preventDefault();
+
+
+        projectList.scrollLeft += e.deltaY;
+      }, { passive: false });
+    });
+  </script>
+
+</body>
+
+</html>
